@@ -12,13 +12,12 @@ body {
 }
 .nav-logo-area{
     width: 20%;
-    padding: 13px 50px 0px 50px;
+    padding: 13px 0px 0px 50px;
+    /* display: flex; */
 }
 
 .nav-logo-area a{
    text-decoration: none; 
-    display: flex;
-    justify-content: center;
     font-weight: 500;
     font-size: 35px;
     color: grey;
@@ -35,15 +34,17 @@ span{
 .hamburger-area {
     width: 10%;
     padding: 15px 0px 0px 0px;
-    display: flex;
-    justify-content: flex-end;
+    /* s */
+    /* justify-content: center; */
     display: none;
+     border: 1px solid transparent;
 }
 .hamburger-menu{
     width: 50px;
+     border: 1px solid transparent;
 }
 .ham-button{
-    border: 1px solid #ececec;
+    border: 1px solid transparent;
 }
 
 .nav-menu{
@@ -60,16 +61,23 @@ span{
 .nav-menu li a{
    text-decoration: none;
    color: black;
-   padding: 6px 10px 6px 10px;
+   padding: 6px 12px 6px 12px;
    font-size: 16px;
    font-weight: bold;
    text-transform: uppercase;
+   transition: .5s;
+   border-radius: 5px;
+   
+}
+.nav-menu li a:hover{
+   background: #33abf5;
+   color: white;
+   
 }
 #contact{
     padding: 6px 12px 6px 12px;
     color: white;
     background-color: #33abf5;
-    border: 1px solid #33abf5;
     border-radius: 5px;
 }
 .banner{
@@ -199,12 +207,16 @@ footer{
     .icon-div p{
         font-size: 16px;
     }
-    
+   
 }
 @media only screen and (max-width: 768px) {
     .nav-menu-area {
         display: none;
+        margin-top: 40px;
         
+    }
+    .nav-area{
+        width: 90%;
     }
     .nav-menu{
         display: flex;
@@ -212,7 +224,7 @@ footer{
     }
     .nav-menu li {
       text-align: center;
-      padding: 15px;
+      padding: 10px;
     }
     .hamburger-area {
         display: block;
@@ -227,4 +239,5 @@ footer{
          font-size: 18px;
      }
 }
+
 /* end */
